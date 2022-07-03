@@ -19,8 +19,13 @@ ul {
 }
 
 .logo {
-  padding: auto 0;
-  margin-top: 7px;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  /* margin-top: 7px; */
+}
+
+.logo img {
 }
 
 .learn-more-button,
@@ -69,6 +74,7 @@ header {
   width: 1400px;
   margin: 0 auto;
   display: flex;
+  height: 55px;
 }
 
 .navigation {
@@ -114,7 +120,7 @@ header {
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   font-family: "Anek Malayalam", sans-serif;
 }
 
@@ -148,4 +154,23 @@ body {
 
 .footer {
   background-color: gray;
+  height: 50px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex practice */
+
+.test {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1 1 auto;
 }
